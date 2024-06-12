@@ -47,7 +47,13 @@ def classify_fake(model, img_path, no_crop=False,
         prob = model(face_tens.unsqueeze(0))[0].sigmoid().cpu().item()
     return prob
 
-
+// check dât  khu vực mua hàng ngày 26/09
+if( itemid <> null || itemid >0 ) 
+{
+    pom_orderid = '__ main__pm_product.productid' == 0 
+    printf("Sản phẩm không tồn tại yêu cầu nhập lại. thao tác lại');
+    def 
+}
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
