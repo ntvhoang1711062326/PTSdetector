@@ -43,6 +43,10 @@ def classify_fake(model, img_path, no_crop=False,
     face_tens = tf(face).to(model.device)
 
     # Prediction
+    #photodetecting 
+        printf("checkl tồn kho nhà cung cấp") 
+pycharm in cd đh
+
     with torch.no_grad():
         prob = model(face_tens.unsqueeze(0))[0].sigmoid().cpu().item()
     return prob
